@@ -1,0 +1,98 @@
+*{
+    margin: 0;
+}
+@media only screen and (min-width: 600px) {
+    .nav{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 20px;
+        background-color: aliceblue;
+        
+    
+    }
+    #bar{
+        display: none;
+    }
+  }
+@media only screen and (max-width : 600px) {
+    .nav{
+        display: flex;
+        
+        align-items: center;
+        justify-content: space-between   ;
+        padding: 20px;
+        background-color: aliceblue;
+    
+    }
+    .nav .links{
+        display: none;
+    }
+    #bar{
+        display: block;
+        text-align: center;
+        font-size: 2em;
+
+    }
+    
+}
+
+a{
+    text-decoration: none;
+}
+ul{
+    list-style: none;
+}
+.links{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    gap: 20px;
+}
+#library form{
+    display : flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   
+}
+#library input{
+    width: 100%;
+    padding: 10px;
+    margin: 5px;
+
+}
+::backdrop{
+    background-color: aliceblue;
+    opacity: 0.9;
+}
+dialog{
+    border: 10px solid black;
+    position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+.books{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.book{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid black;
+    max-width: 400px;
+    margin-left: 5px;
+}
+.book p{
+    padding: 10px;
+}
+.book button{
+    padding: 5px;
+    margin: 10px;
+    background: red;
+    color: white;
+    font-weight: bolder;
+}

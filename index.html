@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Library</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+   
+    <div class="nav">
+      
+            <h4><a href="#"><img src="png-clipart-goku-dbs-son-goku-thumbnail-removebg-preview.png" width="20%"  alt=""></a></h4>
+            <ul class="links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About Project</a></li>
+                <li><a href="#">Future Aspirations</a></li>
+                <li><a href="#">Contacts</a></li>
+            </ul>
+            <i class="fa fa-bars" aria-hidden="true" id="bar" onclick="show()"></i>
+
+
+    </div>
+    <div id="library">
+    <dialog>
+        <button>Close</button>
+        
+
+            <form id = "form" >
+                <label for="title">Title</label>
+                <input type="text" id="title" required>
+                <label for="title">Author</label>
+                <input type="text" id="author" required>
+                <label for="title">Pages</label>
+                <input type="number" id="pages" required>
+                <label for="title">Read</label>
+                <input type="checkbox" id="read" value="read">
+                <input type="submit" value="Add Book" id="sub">
+            </form>
+          
+
+    
+    </dialog>
+    <div style="text-align: center;">
+        <button >Add New Book</button>
+    </div>
+    <h1>Books:</h1>
+    <div class="books">
+        
+
+    </div>
+
+ 
+</div>
+<script src='main.js' ></script>
+
+
+</body>
+</html>
